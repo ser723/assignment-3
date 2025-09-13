@@ -1,23 +1,28 @@
 #flex-container {
   border: 2px solid black;
   padding: 50px;
-  height: 500px; /* Reduced height to make wrapping visible */
+  height: 200px; /* Reduced height to make wrapping visible */
   display: flex; /* Corrected: This is where 'display: flex' belongs */
   flex-wrap: wrap; /* Added: This allows items to wrap to a new line */
   justify-content: space-around; /* Moved from flex-item to flex-container */
 }
 
 .flex-item {
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: purple;
   color: white;
   text-align: center;
   margin: 20px;
   width: 300px;
-  height: 1200px; /* Note: This height will cause overflow if not adjusted */
+  height: 200px; /* Note: This height will cause overflow if not adjusted */
 }
 
 .flex-item img {
+    border-radius: 20px;
   max-width: 300px;
   max-height: 300px;
+}
+.container {
+  padding: 10px;
+  height: 200px;
 }
