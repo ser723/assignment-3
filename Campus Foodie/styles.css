@@ -1,28 +1,57 @@
 #flex-container {
-  border: 2px solid black;
+  border: 20px solid black;
   padding: 50px;
-  height: 200px; /* Reduced height to make wrapping visible */
-  display: flex; /* Corrected: This is where 'display: flex' belongs */
-  flex-wrap: wrap; /* Added: This allows items to wrap to a new line */
-  justify-content: space-around; /* Moved from flex-item to flex-container */
+   
+
+}
+#flex-item {
+  box-shadow: 5px 10px 8px #888888;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+    gap: 50px;
+  
 }
 
 .flex-item {
-  border-radius: 20px;
-  background-color: purple;
+  background-color: rgb(128, 0, 38);
   color: white;
   text-align: center;
-  margin: 20px;
-  width: 300px;
-  height: 200px; /* Note: This height will cause overflow if not adjusted */
+  
+  
 }
 
 .flex-item img {
-    border-radius: 20px;
+border-radius: 20px;
   max-width: 300px;
   max-height: 300px;
 }
-.container {
-  padding: 10px;
-  height: 200px;
+h1,h2,h3,h4 {
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 22pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    align-items: center;
+    padding-top: 40px;  
 }
+body {
+  background-color: rgb(246, 250, 194);
+}
+p{
+  display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-size: 22pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    align-items: center;
+    padding-top: 40px; 
+    
+}
+
